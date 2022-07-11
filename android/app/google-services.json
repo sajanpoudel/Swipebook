@@ -1,0 +1,31 @@
+{
+    "project_info": {
+        "project_number": "634033108117",
+        "project_id": "ebook-712cd",
+        "storage_bucket": "ebook-712cd.appspot.com"
+    },
+    "client": [{
+        "client_info": {
+            "mobilesdk_app_id": "1:634033108117:android:ef60bdfa4def0688d3d79c",
+            "android_client_info": {
+                "package_name": "com.example.swipebook"
+            }
+        },
+        "oauth_client": [{
+            "client_id": "634033108117-n0lk6v9gtpn3qleu03hnm3amksb2415i.apps.googleusercontent.com",
+            "client_type": 3
+        }],
+        "api_key": [{
+            "current_key": "AIzaSyBjLsFf6bsgcwyOKfPOvSRMoYyDn27LyC4"
+        }],
+        "services": {
+            "appinvite_service": {
+                "other_platform_oauth_client": [{
+                    "client_id": "634033108117-n0lk6v9gtpn3qleu03hnm3amksb2415i.apps.googleusercontent.com",
+                    "client_type": 3
+                }]
+            }
+        }
+    }],
+    "configuration_version": "1"
+}
