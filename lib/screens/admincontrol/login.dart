@@ -98,8 +98,9 @@ class _LoginState extends State<Login> {
                 onPressed: () {
                   print(email);
                   print (password);
-                  if (email == "sajan12poudel34@gmail.com" &&
-                      password == "//TechBook4education//") {
+                  //using static login with fixed email and password
+                  if (email == "something@gmail.com" &&
+                      password == "something") {
                       Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
                     return AdminHomePage();
