@@ -6,11 +6,6 @@ void main() async{
   await Firebase.initializeApp();
   runApp(MyApp());
 }
-// Color combition
-// #003b46  Deep Aqua  Appbar
-// #07575b   Ocean    Back ground
-// #66a5ad   Wave    box
-// #c4dfe6   Seafoam   Text
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
