@@ -1,36 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-
-
 class PdfView extends StatefulWidget {
- 
-   final String? pdfName;
+  final String? pdfName;
   final String? pdfUrl;
-  const PdfView({ Key? key, this.pdfName,this.pdfUrl }) : super(key:key);
-
+  const PdfView({Key? key, this.pdfName, this.pdfUrl}) : super(key: key);
 
   @override
-  
   State<PdfView> createState() => _PdfViewState();
 }
-PdfViewerController _pdfViewerController =PdfViewerController();
+
+PdfViewerController _pdfViewerController = PdfViewerController();
+
 class _PdfViewState extends State<PdfView> {
-   final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
-     void initState() {
-  _pdfViewerController = PdfViewerController();
-  super.initState();
-}
+  final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
+  void initState() {
+    _pdfViewerController = PdfViewerController();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        foregroundColor:Colors.black54 ,
+        foregroundColor: Colors.black54,
         iconTheme: IconThemeData(color: Colors.black54),
-        
-       
         backgroundColor: Colors.white,
-        title:  Text(widget.pdfName!,style: TextStyle(color: Colors.black87)),
+        title: Text(widget.pdfName!, style: TextStyle(color: Colors.black87)),
         actions: <Widget>[
           IconButton(
             icon: const Icon(
@@ -43,23 +39,23 @@ class _PdfViewState extends State<PdfView> {
             },
           ),
           IconButton(
-          icon: Icon(
-            Icons.keyboard_arrow_up,
-            color: Colors.black,
+            icon: Icon(
+              Icons.keyboard_arrow_up,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              _pdfViewerController.previousPage();
+            },
           ),
-          onPressed: () {
-            _pdfViewerController.previousPage();
-          },
-        ),
-        IconButton(
-          icon: Icon(
-            Icons.keyboard_arrow_down,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            _pdfViewerController.nextPage();
-          },
-        )
+          IconButton(
+            icon: Icon(
+              Icons.keyboard_arrow_down,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              _pdfViewerController.nextPage();
+            },
+          )
         ],
       ),
       body: SfPdfViewer.network(
@@ -70,4 +66,5 @@ class _PdfViewState extends State<PdfView> {
     );
   }
 }
+
 /// Represents Homepage for Navigation
