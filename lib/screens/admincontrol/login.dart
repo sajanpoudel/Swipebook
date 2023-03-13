@@ -11,33 +11,30 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   String? email;
   String? password;
-  String errorMessage ="";
+  String errorMessage = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer:Draw(),
+      drawer: Draw(),
       backgroundColor: Colors.white,
       appBar: AppBar(
-        foregroundColor:Colors.black54 ,
+        foregroundColor: Colors.black54,
         iconTheme: IconThemeData(color: Colors.black54),
-        
-       
         backgroundColor: Colors.white,
-        title: Text("Admin Login Page",style: TextStyle(color: Colors.black87)),
-      
+        title:
+            Text("Admin Login Page", style: TextStyle(color: Colors.black87)),
         actions: [
           IconButton(
             icon: Icon(Icons.arrow_back),
-            iconSize:30.0,
-            onPressed: (){
-               Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return HomePage();
-                  },
-                ));
+            iconSize: 30.0,
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return HomePage();
+                },
+              ));
             },
           ),
-          
         ],
       ),
       body: SingleChildScrollView(
@@ -84,7 +81,7 @@ class _LoginState extends State<Login> {
                     hintText: 'Enter secure password'),
               ),
             ),
-            SizedBox(height:10),
+            SizedBox(height: 10),
             Container(
               height: 50,
               width: 250,
@@ -93,20 +90,19 @@ class _LoginState extends State<Login> {
               child: ElevatedButton(
                 onPressed: () {
                   print(email);
-                  print (password);
+                  print(password);
                   //using static login with fixed email and password
                   if (email == "something@gmail.com" &&
                       password == "something") {
-                      Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return AdminHomePage();
-                  },
-                ));
-                  }
-                  else{
-                      setState(() {
-                            errorMessage = 'Your account does not exist';
-                          });
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
+                        return AdminHomePage();
+                      },
+                    ));
+                  } else {
+                    setState(() {
+                      errorMessage = 'Your account does not exist';
+                    });
                   }
                 },
                 child: Text(
@@ -115,15 +111,14 @@ class _LoginState extends State<Login> {
                 ),
               ),
             ),
-                SizedBox(
-                  height: 15.0,
-                ),
-                Center(
-                    child: Text(
-                  errorMessage,
-                  style: TextStyle(color: Colors.red[300]),
-                )),
-           
+            SizedBox(
+              height: 15.0,
+            ),
+            Center(
+                child: Text(
+              errorMessage,
+              style: TextStyle(color: Colors.red[300]),
+            )),
           ],
         ),
       ),

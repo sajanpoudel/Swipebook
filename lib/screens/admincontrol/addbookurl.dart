@@ -13,8 +13,8 @@ class AddBookUrl extends StatefulWidget {
 
 class _AddBookUrlState extends State<AddBookUrl> {
   FirebaseStorage storage = FirebaseStorage.instance;
-  String ?title;
-  String ?description;
+  String? title;
+  String? description;
   final texEditingControllertitle = TextEditingController();
   final textEditingControllerdescription = TextEditingController();
   // Select and image from the gallery or take a picture with the camera
@@ -85,50 +85,40 @@ class _AddBookUrlState extends State<AddBookUrl> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: AppBar(
-         foregroundColor:Colors.black54 ,
+        foregroundColor: Colors.black54,
         iconTheme: IconThemeData(color: Colors.black54),
-        
-       
         backgroundColor: Colors.white,
-        title: Text('Add Resource',style: TextStyle(color: Colors.black87)),
+        title: Text('Add Resource', style: TextStyle(color: Colors.black87)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
-          
           children: [
-                           TextField(
-                             controller: texEditingControllertitle,
-                    keyboardType: TextInputType.text,
-                    textAlign: TextAlign.center,
-                    onChanged: (value) {
-                      title = value;
-                      //Do something with the user input.
-                    },
-                    decoration: kTextFieldDecoration.copyWith(
-                        helperText: 'PDF Name'),
-                  ),
-                  SizedBox(
-                    height: 4.0,
-                  ),
-                  TextField(
-                    controller: textEditingControllerdescription,
-                    textAlign: TextAlign.center,
-                    
-                    onChanged: (value) {
-                      description = value;
+            TextField(
+              controller: texEditingControllertitle,
+              keyboardType: TextInputType.text,
+              textAlign: TextAlign.center,
+              onChanged: (value) {
+                title = value;
+                //Do something with the user input.
+              },
+              decoration: kTextFieldDecoration.copyWith(helperText: 'PDF Name'),
+            ),
+            SizedBox(
+              height: 4.0,
+            ),
+            TextField(
+              controller: textEditingControllerdescription,
+              textAlign: TextAlign.center,
+              onChanged: (value) {
+                description = value;
 
-                      //Do something with the user input.
-                    },
-                    decoration: kTextFieldDecoration.copyWith(
-                        
-                        helperText: ' PDF URL'),
-                  ),
+                //Do something with the user input.
+              },
+              decoration: kTextFieldDecoration.copyWith(helperText: ' PDF URL'),
+            ),
             /////////////////////////////
-      
-
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -139,20 +129,20 @@ class _AddBookUrlState extends State<AddBookUrl> {
                     label: Text('camera')),
                 ElevatedButton.icon(
                     onPressed: () {
-                       _upload('gallery');
+                      _upload('gallery');
                       texEditingControllertitle.clear();
                       textEditingControllerdescription.clear();
                       //  setState(() {
                       //    title ='';
                       //    description ='';
                       //  });
-                    } ,
+                    },
                     icon: Icon(Icons.library_add),
                     label: Text('Gallery')),
               ],
             ),
             //////////////////////////////////
-                  
+
             /////////////////////////////
             Expanded(
               child: FutureBuilder(
@@ -171,8 +161,10 @@ class _AddBookUrlState extends State<AddBookUrl> {
                           child: ListTile(
                             dense: false,
                             leading: Image.network(image['url']),
-                            title: Text(image['uploaded_by'],style: TextStyle(color: Colors.white)),
-                            subtitle: Text(image['description'],style: TextStyle(color: Colors.white)),
+                            title: Text(image['uploaded_by'],
+                                style: TextStyle(color: Colors.white)),
+                            subtitle: Text(image['description'],
+                                style: TextStyle(color: Colors.white)),
                             trailing: IconButton(
                               onPressed: () => _delete(image['path']),
                               icon: Icon(
