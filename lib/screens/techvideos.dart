@@ -12,12 +12,11 @@ class Techvideos extends StatelessWidget {
     return Scaffold(
       drawer: Draw(),
       appBar: AppBar(
-        foregroundColor:Colors.black54 ,
+        foregroundColor: Colors.black54,
         iconTheme: IconThemeData(color: Colors.black54),
-        
-       
         backgroundColor: Colors.white,
-        title: Text("Technology Videos",style: TextStyle(color: Colors.black87)),
+        title:
+            Text("Technology Videos", style: TextStyle(color: Colors.black87)),
         actions: [
           IconButton(
             icon: Icon(Icons.arrow_back),
@@ -32,8 +31,6 @@ class Techvideos extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15, top: 20),
         child: ListView(
           children: [
-            
-
             SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(top: 3, bottom: 3),
