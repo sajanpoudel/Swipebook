@@ -89,8 +89,6 @@ class _LoginState extends State<Login> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: ElevatedButton(
                 onPressed: () {
-                  print(email);
-                  print(password);
                   //using static login with fixed email and password
                   if (email == "something@gmail.com" &&
                       password == "something") {
