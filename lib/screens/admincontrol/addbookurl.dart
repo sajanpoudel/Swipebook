@@ -44,10 +44,10 @@ class _AddBookUrlState extends State<AddBookUrl> {
         // Refresh the UI
         setState(() {});
       } on FirebaseException catch (error) {
-        print(error);
+        debugPrint(error.toString());
       }
     } catch (err) {
-      print(err);
+      debugPrint(err.toString());
     }
   }
 
