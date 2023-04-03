@@ -17,6 +17,19 @@ What you will need:
 
 If you want to contribute to our initiative to make education free and accessible for underprivileged people, you can help us to build this open-source project and send any educational resources to our email address (techbook999@gmail.com).
 
+## Run the app
+
+1. Install Flutter and create a Firebase project (Firestore and Storage).
+2. Add your own `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) to the platform folders.
+3. Fetch packages and start the app:
+
+```
+flutter pub get
+flutter run
+```
+
+The admin screens use a fixed demo login that is checked inside `lib/screens/admincontrol/login.dart`. Replace it with real authentication before publishing the app.
+
 ## Code Structure 
 
 * Main code is located within lib folder
