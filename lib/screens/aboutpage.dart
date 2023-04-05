@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:techbook/screens/components/slider.dart';
 import 'package:techbook/screens/admincontrol/login.dart';
 
+/// The about page.
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
