@@ -6,6 +6,7 @@ import 'package:path/path.dart' as path;
 import 'package:image_picker/image_picker.dart';
 import 'package:techbook/screens/components/constant.dart';
 
+/// The add book url used on the admincontrol screen.
 class AddBookUrl extends StatefulWidget {
   @override
   _AddBookUrlState createState() => _AddBookUrlState();
