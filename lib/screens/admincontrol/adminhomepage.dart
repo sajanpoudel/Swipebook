@@ -6,6 +6,7 @@ import 'package:techbook/screens/components/gesturedetector.dart';
 import 'package:techbook/screens/components/cardbox.dart';
 import 'package:techbook/screens/homepage.dart';
 
+/// The admin home page.
 class AdminHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
