@@ -3,6 +3,7 @@ import 'package:techbook/screens/admincontrol/adminhomepage.dart';
 import 'package:techbook/screens/components/slider.dart';
 import 'package:techbook/screens/homepage.dart';
 
+/// The login used on the admincontrol screen.
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
