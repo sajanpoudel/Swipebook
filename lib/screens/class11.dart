@@ -5,6 +5,7 @@ import 'package:techbook/screens/components/gesturedetector.dart';
 
 import 'package:techbook/screens/components/slider.dart';
 
+/// The class eleven widget shared between screens.
 class ClassEleven extends StatelessWidget {
   // This widget is the root of your application.
   @override
