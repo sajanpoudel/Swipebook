@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:techbook/screens/components/slider.dart';
 import 'package:techbook/screens/components/gesturedetector.dart';
 
+/// The class twelve widget shared between screens.
 class ClassTwelve extends StatelessWidget {
   // This widget is the root of your application.
   @override
