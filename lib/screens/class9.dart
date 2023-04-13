@@ -7,6 +7,7 @@ import './courses/Wpd9.dart';
 import 'package:techbook/screens/components/slider.dart';
 import 'package:techbook/screens/components/gesturedetector.dart';
 
+/// The class nine widget shared between screens.
 class ClassNine extends StatelessWidget {
   // This widget is the root of your application.
   @override
