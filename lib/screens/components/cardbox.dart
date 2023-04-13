@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// The card box used on the components screen.
 class CardBox extends StatelessWidget {
   final String? text;
   final Color textcolor;
