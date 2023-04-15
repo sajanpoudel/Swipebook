@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:techbook/screens/components/pdfview.dart';
 
+/// The pdfdownload used on the components screen.
 class Pdfdownload extends StatelessWidget {
   final String? url;
   final String? pdfName;
