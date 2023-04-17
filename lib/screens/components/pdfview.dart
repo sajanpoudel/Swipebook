@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+/// The pdf view used on the components screen.
 class PdfView extends StatefulWidget {
   final String? pdfName;
   final String? pdfUrl;
