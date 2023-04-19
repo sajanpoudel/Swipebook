@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/// The draw used on the components screen.
 class Draw extends StatelessWidget {
   const Draw({
     Key? key,
