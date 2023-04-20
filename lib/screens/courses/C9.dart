@@ -6,6 +6,7 @@ import 'package:techbook/screens/components/pdfdownload.dart';
 import 'package:techbook/screens/components/cardbox.dart';
 import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 
+/// The c9 used on the courses screen.
 class C9 extends StatefulWidget {
   // This widget is the root of your application.
   @override
