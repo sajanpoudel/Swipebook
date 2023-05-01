@@ -6,6 +6,7 @@ import 'package:techbook/screens/components/pdfdownload.dart';
 import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 import 'package:techbook/screens/components/cardbox.dart';
 
+/// The fds9 used on the courses screen.
 class FDS9 extends StatelessWidget {
   // This widget is the root of your application.
   @override
