@@ -10,6 +10,7 @@ import 'package:techbook/screens/components/slider.dart';
 import 'package:techbook/screens/components/gesturedetector.dart';
 import 'package:techbook/screens/components/pdfview.dart';
 
+/// The home page.
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
