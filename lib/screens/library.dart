@@ -5,6 +5,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:techbook/screens/components/pdfview.dart';
 
+/// The library page.
 class LibraryPage extends StatefulWidget {
   const LibraryPage({Key? key}) : super(key: key);
 
