@@ -5,6 +5,7 @@ import 'package:techbook/screens/components/youtubeid.dart';
 
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+/// The techvideos widget shared between screens.
 class Techvideos extends StatelessWidget {
   // This widget is the root of your application.
   @override
