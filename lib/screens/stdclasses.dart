@@ -10,6 +10,7 @@ import 'package:techbook/screens/components/gesturedetector.dart';
 
 const double kassetsheight = 107;
 
+/// The std class widget shared between screens.
 class StdClass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
