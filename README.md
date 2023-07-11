@@ -5,7 +5,7 @@
 ## Swipe Book 
 is a collection of a wide variety of educational resources consisting pdfs, images, question papers, a collection of important questions, programs, useful videos that will help in the effective learning process. 
 
-Initially, it only consists of resources for the technical students of the Computer Engineering batch studying in grade 9 - grade 12. Now, it includes a variety of resources for culture, religion, technology, science, computers, programming languages, mathematics, SAT preparation, etc. This app aims to make the learning process easy and accessible everywhere.
+Initially, it only consists of resources for the technical students of the Computer Engineering batch studying in grade 9 - grade 12. Now, it includes a variety of resources for culture, religion, technology, science, computers, programming languages, mathematics, SAT preparation, etc. This app aims to make the learning process easy and accessible everywhere. 
 
 ## Contributing
 
@@ -38,5 +38,8 @@ Follow the steps in this link based on your developing platform:
 https://docs.flutter.dev/get-started/install
 
 To see your changes in real time, hot reload flutter and it will display the changes on your emulator in real time instead of rebuilding the entire project, which takes time. 
+<h2>Demo Video: </h2>
 
+ ![image description](https://github.com/sajanpoudel/Swipebook/blob/demo-video/video%20(1)_resized%20(1).gif)
+ 
 
