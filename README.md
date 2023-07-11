@@ -39,5 +39,7 @@ https://docs.flutter.dev/get-started/install
 
 To see your changes in real time, hot reload flutter and it will display the changes on your emulator in real time instead of rebuilding the entire project, which takes time. 
 <h2>Demo Video: </h2>
-![Demo Video](https://github.com/sajanpoudel/Swipebook/blob/demo-video/video%20(1)_resized%20(1).gif)
+
+ ![image description](https://github.com/sajanpoudel/Swipebook/blob/demo-video/video%20(1)_resized%20(1).gif)
+ 
 
