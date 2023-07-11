@@ -5,7 +5,7 @@
 ## Swipe Book 
 is a collection of a wide variety of educational resources consisting pdfs, images, question papers, a collection of important questions, programs, useful videos that will help in the effective learning process. 
 
-Initially, it only consists of resources for the technical students of the Computer Engineering batch studying in grade 9 - grade 12. Now, it includes a variety of resources for culture, religion, technology, science, computers, programming languages, mathematics, SAT preparation, etc. This app aims to make the learning process easy and accessible everywhere.
+Initially, it only consists of resources for the technical students of the Computer Engineering batch studying in grade 9 - grade 12. Now, it includes a variety of resources for culture, religion, technology, science, computers, programming languages, mathematics, SAT preparation, etc. This app aims to make the learning process easy and accessible everywhere. 
 
 ## Contributing
 
